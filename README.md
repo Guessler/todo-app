@@ -1,69 +1,61 @@
-# React + TypeScript + Vite
+### 📌 Ответы на вопросы
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#### 1. Был ли у вас опыт веб-разработки? Приложите ссылку на репозиторий с вашим веб-проектом, если возможно.
 
-Currently, two official plugins are available:
+Да, у меня есть опыт веб-разработки.  
+Я занимаюсь разработкой как фронтенд, так и бэкенд частей приложений. Основной стек: **React**, **TypeScript**, **Redux**, **MUI**, а также серверная часть на **Node.js** (в том числе **NestJS**).  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+В своих проектах я реализую:
+- Авторизацию через **JWT**
+- Работу с **WebSocket**
+- Интеграцию с **REST API**
+- Покрытие кода **юнит-тестами**
 
-## Expanding the ESLint configuration
+📌 Ссылка на портфолио: [https://guessler.github.io/portfolio/](https://guessler.github.io/portfolio/)  
+📌 Там же можно найти ссылки на мои публичные проекты.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+На данный момент я работаю над проектом, где использую **Next.js** в связке с **NestJS**, но он ещё не опубликован. Как только будет готов — выложу его на хостинг и поделюсь ссылкой.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+#### 2. Выполнено практическое задание
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Я выполнил практическое задание согласно описанию:  
+- Реализовал полноценное **приложение для управления задачами (To-Do List)**  
+- Добавил функционал:
+  - Добавление задач
+  - Переключение статуса задачи (`isDone`)
+  - Фильтрация по активным / завершённым / всем задачам
+  - Очистка завершённых задач
+  - Поддержка добавления задачи по нажатию `Enter`
+  - Сообщение "Задач нет", если список пустой
+- Написал **полное покрытие юнит-тестами** с использованием **React Testing Library + Jest**
+
+🔧 Для запуска проекта:
+```bash
+npm install
+npm run start
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+🧪 Для запуска тестов:
+```bash
+npm test
 ```
+
+Проект написан с соблюдением best practices:
+- Чистый TypeScript
+- Использование MUI для UI
+- Полное покрытие тестами
+- Удобная структура компонентов и логики
+
+---
+
+#### 3. Готовы ли выйти на фуллтайм (удаленно/офис/гибрид) в случае успешного завершения стажировки через 3–4 месяца?
+
+Да, я полностью открыт к трудоустройству и готов выйти на **фуллтайм** по окончании стажировки.  
+Готов работать в любом формате:
+- **Удалённо**
+- **Офис**
+- **Гибридный график**
+
+Очень заинтересован в развитии в компании, где смогу расти как разработчик и вносить реальный вклад в продукт.
